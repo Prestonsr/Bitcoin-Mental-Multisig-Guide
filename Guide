@@ -1,0 +1,43 @@
+
+TL;DR
+
+Create New Wallet Change Settings to Multisig Select 3 of 3 cosigners Keystore 1 - New or Imported Software Wallet 12 Mnemonic Words - Nice 5 times Zoo 7 times then your passphrase and then use m/48'/0'/0'/7' Keystore 2 - New or Imported Software Wallet 12 Mnemonic Words - Nice 5 times Zoo 7 times then your passphrase and then use m/48'/0'/0'/77' Keystore 3 - New or Imported Software Wallet 12 Mnemonic Words - Nice 5 times Zoo 7 times then your passphrase and then use m/48'/0'/0'/777' Forever remember Nice Nice Nice Nice Nice Zoo Zoo Zoo Zoo Zoo Zoo Zoo + your passphrase + 3 lucky numbers - 7, 77, 777 Enjoy Delete Repeat
+
+
+
+Step 1 - Download and Run Sparrow on a secure and trusted machine. Temporary OS and stay offline if you want. Sledgehammer the machine afterwards for maximum safety. JK don't.
+
+
+
+Step 2 - File &gt; New Wallet
+
+
+
+Step 3 - On the Settings tab you will find "Policy Type". Switch this to Multi Signature.
+
+
+
+Step 4 - Select the desired amount of keys (cosigners) needed. I recommend keeping the numbers the same as there is no security benefit to using a 2 of 3 or 3 of 5 multisig model as these will all be on one "Parent" or "Master" Key. So keeping them the same will be easier to remember as any change in numbers will change everything about the addresses and derived "child" keys. Example - 3 of 3 or 4 of 4 or 5 of 5 etc.
+
+
+
+Step 5 - On the bottom you will find tabs called "Keystore 1" , "Keystore 2" , "Keystore 3". Under Keystore 1 select "New or Imported Software Wallet". Then select "Mnemonic Words (BIP39) but the 12 word option from the drop down menu. This will be easier to remember. These will be "Parent" or "Master" BIP39 keys that we will then derive "child" keys to be the signers. In this example I will use rediculously easy words. You may want to be more clever. Braid the words. Shift em. Do something but not this. This is a proof of concept. Though pretty secure. Try using the words Nice Nice Nice Nice Nice Zoo Zoo Zoo Zoo Zoo Zoo Zoo. The words must be in that order. Thats 5 Nices and 7 Zoos. Pretty easy to remember so far. The Passphrase from what I can tell adds another layer of security. I think it salts the words before deriving keys. Meaning it changes everything if you change the Passphrase. My thinking is this turns a super simple phrase like Nice Zoo into something way harder to guess. Its Nice Nice Nice Nice Nice Zoo Zoo Zoo Zoo Zoo Zoo Zoo ** with *** being the extra word someone would have to guess (They'll have to guess a lot more once we're done). Use the same passphrase for each keystore. Easier to remember. Not required. After clicking "Create Keystore" words will disapear and you'll then probably see m/48'/0'/0'/2' This is where you select which "child" key from the "Parent" or "Master" key we just entered (Nice x5 Zoo x7) to use. Let me put that a different way. We just entered 12 words which is a MASTER BIP39 key. From that one key there are thousands of other keys it makes. From those, we are going to select specific numbers that are easy to remember but hard to guess. The exact order MUST be remembered. So for m/48'/0'/0'/2' you would change the 2 to a significant number you can remember. For fun lets go lucky number 7. It should look like this m/48'/0'/0'/7' then click "Import Custom Derivation Key…".
+
+
+
+Step 6 - Repeat step 5 using the same words Nice x5 Zoo x7 plus your passphrase. This time change the number from 7 to 77. Should look like this m/48'/0'/0'/77' then click import.
+
+
+
+Step 7 - Repeat as before but with m/48'/0'/0'/77' changed to m/48'/0'/0'/777'
+
+
+
+Step 8 - Thats it. Once you click apply on the bottom right you will see what your new brain wallet holds. So, in this guide we just created a multisig wallet that has many addresses and many keys within it and all we need to remember is hey…. Nice Zoo yuh got there. and that will jog a memory of…. oh yeah… i got a shit load of money in my brain. Nice x5 Zoo x7 + my password and my 3 lucky numbers. 7, 77, and 777.
+
+
+
+Why would someone use this wallet method versus a standard BIP39 seed phrase? My reasoning is that I don't like the fact that anyone in the world can create a script to go through all the seed phrases and then scan the timechain for any usage of those keys. I know that it's extremely unlikely. But it is way more likely when I want to use words that are easier to remember. Like when I'm using only two words. Nice and Zoo. The chances someone is going to guess Nice and Zoo on top of my Passphrase and my significant chosen numbers is beyond extremely unlikely. I could choose the 9 of 9 option and then enter my phone number without area code plus throw in 2 random numbers and that would still be pretty easy to remember but super difficult to crack. With this method it really feels like I can walk up to any computer and just "log in" to the Bitcoin network, access all my TXs, generate a new receiving address, and then just delete it and walk away. You can tap into the Bitcoin network anywhere, anytime. Wild feeling.
+
+
+
